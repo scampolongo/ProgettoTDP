@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" ;>
+    <title>Prova di Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <style>
+        .navbar-dark .navbar-nav a.nav-link {
+            color: #ffffff;
+            font-size: 1.1em;
+        }
+
+        .dropdown-menu {
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            border: none;
+            border-radius: 0;
+            padding: 0.7em;
+        }
+
+        @media only screen and (min-width: 992px) {
+            .dropdown:hover .dropdown-menu {
+                display: flex;
+            }
+
+            .dropdown-menu.show {
+                display: flex;
+            }
+        }
+
+        .dropdown-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .dropdown-menu li .dropdown-item {
+            color: gray;
+            font-size: 1em;
+            padding: 0.5em 1em;
+        }
+
+        .dropdown-menu li .dropdown-item:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown-menu li:first-child a {
+            font-weight: bold;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            color: #106EEA;
+        }
+
+        .dropdown-menu li:first-child a:hover {
+            background-color: #f1f1f1;
+        }
+
+        @media only screen and (max-width: 992px) {
+            .dropdown-menu.show {
+                flex-wrap: wrap;
+                max-height: 350px;
+                overflow-y: scroll;
+            }
+        }
+
+        @media only screen and (min-width: 992px) and (max-width: 1140px) {
+            .dropdown:hover .dropdown-menu {
+                width: 40vw;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #106EEA;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.tep.pr.it">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <ul>
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                                    <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                                    <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                                    <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                                    <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                                    <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                                    <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                                    <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                                    <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <hr class="hr">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                I Filobus Van Hool Exquicity AG 300T TRL hanno una lunghezza di 18,6 m , una larghezza di 2,55 m ed un
+                passo tra gli assi tra c.ca 6,6 e 6,7 m, sono dotati di un motore elettrico Skoda da 240 kW montato a
+                sinistra nella parte anteriore del veicolo, come da buona tradizione del costruttore belga. Il veicolo
+                ha una capacità di carico di 137 passeggeri di cui 35 seduti, la larghezza interna utile è di 2,4 m ed
+                il piano di calpestio si trova a 33 cm dal suolo per l’intera estesa del veicolo, le porte hanno una
+                larghezza utile di 1,18 m ed essendo elettriche sono velocissime.Il motore diesel è un Iveco Tector Euro
+                5 capace di reggere un buon tratto di marcia autonoma.
+            </div>
+            <div class="col">
+                Tali veicoli sono stati costruiti nello stabilimento Van Hool di Lier in Belgio, il primo esemplare è
+                giunto a Parma nel Marzo 2012 per i primi test pur essendo un prototipo, nel Maggio 2013 il primo vero e
+                proprio esemplare è stato consegnato in Emilia e tra tale mese ed il successivo Marzo 2014 sono stati
+                consegnati ben 9 veicoli. Da ricordare che uno di essi è stato esposto a Milano in occasione della
+                Manifestazione Move App Expo nell’Ottobre 2013. La loro immissione in servizio è avvenuta sulla linea 5
+                Via Orazio – Pza Garibaldi – Via Chiavari, servizio la cui frequenza ora è decisamente importante.
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.tplitalia.it/TEP/Filobus/Serie5101-5110/5110-01-800.jpg" class="card-img-top"
+                        alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">VanHool Exquicity 18</h5>
+                        <p class="card-text">In servizio dal 2014</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="hr">
+        <div class="row">
+            <div class="col">
+                Attualmente il servizio filoviario parmense viene assicurato dalla linea 1 grazie agli anziani Menarini
+                F 201/2 serie 031/040 del 1986/87 mentre i più giovani e rari CAM Autodromo Busotto MAN LNT 204F serie
+                041/054 vengono ora utilizzati sulle linee 3 e 4. La disponibilità di nuovi filobus ha ovviamente
+                comportato il fermo già attuato in parte da tempo dei più anziani Menarini F 201/1 LU serie 021/030 del
+                1981, tanto più che la copertura del servizio da parte dei moderni Van Hool ha comportato soprattutto lo
+                spostamento dei Menarini F 201/2 LU sulla linea 1 lasciando appunto ai CAM Busotto il compito di servire
+                le linee 3 e 4.
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.tplitalia.it/TEP/Urbani/Serie1694-1696/1695-01-800.jpg" class="card-img-top"
+                        alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">ISUZU NovoCiti Life</h5>
+                        <p class="card-text">Nuovi minibus per la linea 15</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                Nella giornata di venerdì 7 dicembre 2018, TEP Parma ha presentato alla stampa ed ai propri dipendenti
+                un ulteriore passo nel processo di rinnovamento della flotta: presso il deposito di Via Taro l'azienda
+                parmense ha presentato i 19 nuovi esemplari Scania Citywide 12 serie 1665/1683 i cui primi 10 esemplari
+                sono entrati in servizio nella seconda metà dello scorso mese di novembre.
+            </div>
+            <div class="col">
+                In particolare presso uno dei piazzali del deposito sono stati presentati tutti e 19 i veicoli, compresi
+                anche quelli già immatricolati, tanto che addirittura prima e dopo la consueta presentazione alcune
+                vetture hanno effettuato regolare servizio passeggeri, rientrando in deposito solo per un paio d'ore.
+            </div>
+        </div>
+        <hr class="hr">
+    </div>
+</body>
+
+</html>
