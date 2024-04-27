@@ -43,7 +43,7 @@
     </style>
 </head>
 <body>
-    <h1>Quiz sull'Educazione Stradale Auto</h1>
+    <h1>Quiz sull'Educazione Stradale in Bici</h1>
     <div id="quiz">
         <p id="question"></p>
         <button id="startButton">Inizia</button>
@@ -131,7 +131,7 @@ const questions = [
 
         function showQuestion() {
             if (currentQuestion == -1) {
-                document.getElementById("question").innerText = "Inizia il quiz!";
+                document.getElementById("question").innerText = "Tenta il quiz!";
                 document.getElementById("startButton").style.display = "block";
                 document.getElementById("option1").style.backgroundColor = "transparent";
                 document.getElementById("option2").style.backgroundColor = "transparent";       
@@ -188,14 +188,13 @@ const questions = [
             currentQuestion = -1;
             document.getElementById("quiz").style.display = "none";
             if (score == questions.length) {
-                alert("Hai risposto correttamente a tutte le domande  :)");
+                alert("Hai risposto correttamente a tutte le domande  :)\nClicca per tornare alla home.");
             } else if (score == 0) {
-                alert("Hai sbagliato tutte le domande :(");
+                alert("Hai sbagliato tutte le domande :(\nClicca per tornare alla home.");
             } else {
-                alert("Hai risposto correttamente a " + score + " su " + questions.length + " domande!");
+                alert("Hai risposto correttamente a " + score + " su " + questions.length + " domande!\nClicca per tornare alla home.");
             }
-            // Aggiungi qui la parte per tornare alla home page
-            // window.location.href = "url_della_tua_home_page";
+            window.location.href = "index.html";
         }
 
         showQuestion();
