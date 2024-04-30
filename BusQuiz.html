@@ -151,7 +151,7 @@
                 document.getElementById("startButton").onclick = startQuiz;
             } else {
                 const q = questions[currentQuestion];
-                document.getElementById("question").innerText = q.question;
+                document.getElementById("question").innerText = "Domanda numero: " + (currentQuestion + 1) + "\n" + q.question;
                 document.getElementById("option1").innerText = q.options[0];
                 document.getElementById("option2").innerText = q.options[1];
                 document.getElementById("option3").innerText = q.options[2];
@@ -180,16 +180,30 @@
         }
 
         function checkAnswer(answer) {
-            if (answer == questions[currentQuestion].answer) {
-                score++;
-            }
-            currentQuestion++;
-            if (currentQuestion < questions.length) {
-                showQuestion();
+        const correctAnswer = questions[currentQuestion].answer;
+        const chosenButton = document.getElementById("option" + (answer + 1));
+
+
+            if (answer === correctAnswer) {
+            score++;
+            chosenButton.style.backgroundColor = "#4CAF50"; 
             } else {
-                showScore();
+                chosenButton.style.backgroundColor = "#FF0000"; 
             }
-        }
+
+            setTimeout(function() {
+                currentQuestion++;
+                document.getElementById("option1").style.backgroundColor = "#4CAF50";
+                document.getElementById("option2").style.backgroundColor = "#4CAF50";
+                document.getElementById("option3").style.backgroundColor = "#4CAF50";
+                document.getElementById("option4").style.backgroundColor = "#4CAF50";
+            if (currentQuestion < questions.length) {
+                    showQuestion();
+                } else {
+                    showScore();
+                }
+            }, 500); 
+}
 
         function showScore() {
             currentQuestion = -1;
