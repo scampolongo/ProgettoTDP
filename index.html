@@ -1,0 +1,452 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" ;>
+    <title>Educazione Stradale</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <style>
+        .navbar-dark .navbar-nav a.nav-link {
+            color: #ffffff;
+            font-size: 1.1em;
+        }
+
+        .dropdown-menu {
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            border: none;
+            border-radius: 0;
+            padding: 0.7em;
+        }
+
+        @media only screen and (min-width: 992px) {
+            .dropdown:hover .dropdown-menu {
+                display: flex;
+            }
+
+            .dropdown-menu.show {
+                display: flex;
+            }
+        }
+
+        .dropdown-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .dropdown-menu li .dropdown-item {
+            color: gray;
+            font-size: 1em;
+            padding: 0.5em 1em;
+        }
+
+        .dropdown-menu li .dropdown-item:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown-menu li:first-child a {
+            font-weight: bold;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            color: #106EEA;
+        }
+
+        .dropdown-menu li:first-child a:hover {
+            background-color: #f1f1f1;
+        }
+
+        @media only screen and (max-width: 992px) {
+            .dropdown-menu.show {
+                flex-wrap: wrap;
+                max-height: 350px;
+                overflow-y: scroll;
+            }
+        }
+
+        @media only screen and (min-width: 992px) and (max-width: 1140px) {
+            .dropdown:hover .dropdown-menu {
+                width: 40vw;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #106EEA;">
+            <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item desktop-only">
+                            <a class="nav-link active" aria-current="page" href="Mappa.html">Mappa</a>
+                        </li>
+                    
+                        <li class="nav-item">
+                        <a class="nav-link" href="https://www.tep.pr.it">TEP</a>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="display-4">L'Educazione Stradale In Bici</h1>
+                <p class="lead">Regole di Base per la Sicurezza in Bicicletta.</p>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col">
+                <h2>Pista ciclabile e ciclopedonale</h2>
+                <p>Dove possibile, è consigliabile utilizzare le <b>piste ciclabili</b> dedicate, se presenti. Le piste
+                    ciclabili offrono uno spazio sicuro e separato dalla circolazione veicolare, riducendo il rischio di
+                    incidenti.<br><br>
+                    Le <b>piste ciclopedonali</b> offrono uno spazio dedicato per la circolazione sia dei ciclisti che
+                    dei pedoni. Tuttavia, è importante essere consapevoli che su queste piste può esserci un aumento del
+                    rischio di incidenti, specialmente in presenza di pedoni.<br><br>
+                    Poiché le piste ciclopedonali sono spesso frequentate da una varietà di utenti, tra cui ciclisti,
+                    pedoni, corridori e altri, è necessario adottare un comportamento ancora più cauto e rispettoso per
+                    evitare situazioni pericolose.
+                </p>
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+                <div class="card mx-5 border-0" style="width: 10rem;">
+                    <div class="d-flex justify-content-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Italian_traffic_signs_-_pista_ciclabile.svg/1024px-Italian_traffic_signs_-_pista_ciclabile.svg.png"
+                            class="card-img-top" alt="img">
+                    </div>
+                </div>
+                <div class="card mx-5 border-0" style="width: 10rem;">
+                    <div class="d-flex justify-content-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Italian_traffic_signs_-_percorso_pedonale_e_ciclabile.svg/2048px-Italian_traffic_signs_-_percorso_pedonale_e_ciclabile.svg.png"
+                            class="card-img-top" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="hr">
+
+        <div class="row mt-4">
+
+            <div class="col d-flex justify-content-center align-items-center">
+                <div class="card border-0" style="width: 40rem;">
+                    <img src="https://fci.shbcdn.com/blobs/variants/2/1/1/2/21122388-3382-46f6-8685-cfe79d05aada_medium_p.jpg?_635714405781221614"
+                        class="card-img-top" alt="img">
+                </div>
+            </div>
+
+            <div class="col">
+                <h2>Essere Visibili e Consapevoli</h2>
+                <p>Indossare abbigliamento adatto e dispositivi di sicurezza, come elmetti e indumenti ad alta
+                    visibilità, soprattutto di notte. Mantenere una buona visibilità e consapevolezza dell'ambiente
+                    circostante è essenziale per la sicurezza stradale.<br><br>
+                    Si consiglia l'utilizzo di <b>fari montati in modo fisso</b> nonché luci supplementari applicate al
+                    corpo.
+                    I <b>catarifrangenti fissati ai raggi</b> o i <b>pneumatici rifrangenti</b> assicurano una
+                    visibilità
+                    laterale.<br><br>
+                    <b>Obbligatorio indossare il giubbotto o le bretelle retroriflettenti</b> quando si va in bici fuori
+                    città,
+                    da mezz'ora dopo il tramonto a mezz'ora prima dell'alba e l'obbligo vale anche di giorno in
+                    galleria.
+                </p>
+            </div>
+
+        </div>
+
+        <hr class="hr">
+
+        <div class="row mt-4">
+
+            <div class="col">
+                <h2>Maggior Precauzione nelle Intersezioni</h2>
+                <p>Prestare particolare attenzione negli incroci e nelle intersezioni, dove si verificano molti
+                    incidenti. Ridurre la velocità, guardare attentamente il traffico e dare la precedenza secondo le
+                    norme vigenti.
+                </p>
+            </div>
+
+            <div class="col d-flex justify-content-center align-items-center">
+                <div class="card border-0" style="width: 12rem;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Italian_traffic_signs_-_attraversamento_ciclabile.svg/1164px-Italian_traffic_signs_-_attraversamento_ciclabile.svg.png"
+                        class="card-img-top" alt="img">
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="hr">
+
+    </div>
+
+    <div class="container">
+        <div class="text-center mt-5">
+            <h1 class="display-3">L'Educazione Stradale In Autobus</h1>
+            <p class="lead">Le norme più importanti per i passeggeri</p>
+        </div>
+        <hr class="hr">
+        <div class="row">
+            <div class="col">
+                Le norme più importanti per i passeggeri di bus, urbani ed extraurbani, di tutta italiana sono
+                principalmente regole dettate dal <b>buon senso</b>.</br></br> Il rispetto di queste norme permette di
+                agevolare l’accesso al servizio, favorire la civile convivenza tra i passeggeri, la collaborazione fra
+                cittadini e personale nonché la sicurezza del viaggio
+            </div>
+            <div class="col">
+                La norma riguardante le porte di <b>salita/discesa</b> sui mezzi di trasporto pubblico è fondamentale
+                per
+                garantire la sicurezza e l'efficienza degli spostamenti. Di norma, <b>è consentito salire sia dalla
+                    porta
+                    posteriore che da quella anteriore del bus</b>. È importante rispettare questa regola per diversi
+                motivi.
+                Prima di tutto, <b>l'accesso ordinato attraverso le porte designate facilita il flusso di persone</b> a
+                bordo e
+                riduce il rischio di congestione e ritardi. Inoltre, <b>l'uso corretto delle porte aiuta a evitare
+                    situazioni pericolose, come incidenti o cadute</b>, soprattutto durante le fasi di salita e discesa.
+                Il
+                rispetto di questa norma non solo migliora l'esperienza di viaggio per tutti gli utenti, ma contribuisce
+                anche a promuovere una <b>cultura di sicurezza e rispetto reciproco</b> all'interno della comunità.
+                Pertanto, è
+                responsabilità di ciascun passeggero osservare e rispettare le indicazioni riguardanti le porte di
+                salita/discesa, contribuendo così a garantire un <b>ambiente di viaggio sicuro e piacevole per
+                    tutti</b>.
+            </div>
+            <div class="col">
+                <div class="card" style="width: 22rem;">
+                    <img src="https://www.gelestatic.it/thimg/s663c51iTbcSH0LvBgjKapWzFxA=/1280x0/smart/filters:format(webp)/https://www.repstatic.it/content/localirep/img/rep-parma/2020/05/01/073548014-ec556526-8d42-45ad-b347-5ee9bba2f608.jpg"
+                        class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">Segnaletica della porta di entrata</h5>
+                        <p class="card-text">Di norma è consentito salire sia dalla porta posteriore che da quella
+                            anteriore del bus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="hr">
+        <div class="row">
+            <div class="col">
+                Un'altra norma essenziale per garantire un sistema di trasporto pubblico efficiente e equo è la
+                <b>convalidazione obbligatoria del titolo di viaggio</b> a ogni salita.<br><br>
+                Questa pratica è fondamentale per diverse ragioni. In primo luogo, assicura che il sistema di
+                trasporto pubblico possa funzionare in modo <b>sostenibile finanziariamente</b>, garantendo che i costi
+                operativi vengano coperti e che vengano forniti <b>servizi di qualità</b>.
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img src="https://www.tep.pr.it/wp-content/uploads/2020/01/IMG-20160401-WA0008.jpg"
+                        class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">È obbligatorio convalidare il proprio titolo di viaggio</h5>
+                        <p class="card-text">Convalidare a ogni salita, sia biglietti che abbonamenti</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                In secondo luogo, aiuta a <b>quantificare la domanda</b> in modo tale da poter garantire un servizio
+                migliore.<br>
+                Monitorando il numero di passeggeri che utilizzano il trasporto pubblico, gli enti gestori possono
+                adattare l'offerta di servizio alle esigenze effettive degli utenti.<br><br>
+                Ad esempio, se si verifica un aumento significativo dell'affluenza, possono essere programmate corse
+                supplementari per evitare sovraffollamenti e garantire un'esperienza di viaggio confortevole per tutti.
+            </div>
+            <div class="col">
+                È per questo motivo che è necessario <b>convalidare sia biglietti che abbonamenti</b> a ogni salita sul
+                bus, ricordarsi di farlo anche a ogni cambio!.
+            </div>
+        </div>
+        <hr class="hr">
+
+    </div>
+
+
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="display-4">L'Educazione Stradale In Macchina</h1>
+                <p class="lead">Seguire le norme a piedi è essenziale per la sicurezza di tutti gli utenti della strada.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col">
+                <h2>Rispetta i Limiti di Velocità</h2>
+                <p>Rispetta sempre i limiti di velocità indicati e adatta la tua velocità alle condizioni del traffico e
+                    della strada.</p>
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+                <div class="card mx-5  border-0" style="width: 10rem;">
+                    <div class="d-flex justify-content-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Italian_traffic_signs_-_limite_di_velocit%C3%A0_50.svg/2048px-Italian_traffic_signs_-_limite_di_velocit%C3%A0_50.svg.png"
+                            class="card-img-top" alt="img">
+                    </div>
+                </div>
+                <div class="card mx-5 border-0" style="width: 10rem;">
+                    <div class="d-flex justify-content-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Italian_traffic_signs_-_zona_a_velocit%C3%A0_limitata_%28figura_II_323-a%29.svg/1200px-Italian_traffic_signs_-_zona_a_velocit%C3%A0_limitata_%28figura_II_323-a%29.svg.png"
+                            class="card-img-top" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="hr">
+
+        <div class="row mt-4">
+
+            <div class="col d-flex justify-content-center align-items-center">
+                <div class="card border-0" style="width: 12rem;">
+                    <img src="https://us.123rf.com/450wm/theerakit/theerakit2201/theerakit220100037/181110103-non-bere-e-guidare-l-icona-su-sfondo-bianco-fermare-nessun-segno-di-alcol-stile-piatto.jpg?ver=6"
+                        class="card-img-top" alt="img">
+                </div>
+            </div>
+
+            <div class="col">
+                <h2>Non bere alla guida</h2>
+                <p>Agli incroci, fai attenzione ai veicoli che svoltano e ai segnali di stop o di dare precedenza.</p>
+            </div>
+
+        </div>
+
+        <hr class="hr">
+
+        <div class="row mt-4">
+
+            <div class="col">
+                <h2>Evita le Distrazioni alla Guida</h2>
+                <p>Mantieni la tua attenzione sulla strada evitando distrazioni come l'uso del telefono cellulare o la
+                    manipolazione di dispositivi mentre sei al volante.
+                </p>
+            </div>
+
+            <div class="col d-flex justify-content-center align-items-center">
+                <div class="card border-0" style="width: 12rem;">
+                    <img src="https://bolognagomme.eu/wp-content/uploads/2018/02/no-cellulare-alla-guida.jpg"
+                        class="card-img-top" alt="img">
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col text-center">
+                    <h1 class="display-4">L'Educazione Stradale A Piedi</h1>
+                    <p class="lead">Seguire le norme a piedi è essenziale per la sicurezza di tutti gli utenti della strada.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="row mt-5">
+                <div class="col">
+                    <h2>Attraversamento Pedonale</h2>
+                    <p>Quando attraversi la strada, cerca sempre di farlo sulle <b>strisce pedonali</b>, rispettando i
+                        semafori e le segnaletiche stradali. Assicurati di guardare sempre a sinistra e a destra prima di
+                        attraversare e di dare la precedenza ai veicoli.<br><br>Se disponibili, utilizza i
+                        <b>sottopassaggi</b> e le <b>passerelle pedonali</b> per attraversare la strada in sicurezza,
+                        specialmente in presenza di traffico intenso o strade ad alto scorrimento.
+                    </p>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center">
+                    <div class="card mx-5" style="width: 10rem;">
+                        <div class="d-flex justify-content-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Italian_traffic_signs_-_attraversamento_pedonale.svg/1200px-Italian_traffic_signs_-_attraversamento_pedonale.svg.png"
+                                class="card-img-top" alt="img">
+                        </div>
+                    </div>
+                    <div class="card" style="width: 10rem;">
+                        <div class="d-flex justify-content-center">
+                            <img src="https://www.dbverona.it/image/cache/catalog/product/figura-II-306-art-135-500x500.jpg"
+                                class="card-img-top" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <hr class="hr">
+    
+            <div class="row mt-4">
+    
+                <div class="col d-flex justify-content-center align-items-center">
+                    <div class="card border-0" style="width: 12rem;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Italian_traffic_signs_-_attraversamento_pericoloso.svg"
+                            class="card-img-top" alt="img">
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <h2>Attenzione agli Incroci</h2>
+                    <p>Agli incroci, fai attenzione ai veicoli che svoltano e ai segnali di stop o di dare precedenza.</p>
+                </div>
+    
+            </div>
+    
+            <hr class="hr">
+    
+            <div class="row mt-4">
+    
+                <div class="col">
+                    <h2>Camminare sul Marciapiede</h2>
+                    <p>Quando cammini sul marciapiede, mantieniti sempre sul <b>lato destro</b> e lascia spazio agli altri
+                        pedoni.
+                        Fai attenzione agli ostacoli e ai pericoli lungo il percorso.<br><br> In particolare, se ti trovi su
+                        un
+                        <b>percorso ciclopedonale</b>, presta attenzione alle biciclette e mantieniti sulla tua corsia
+                        designata per evitare collisioni e garantire la sicurezza di tutti gli utenti della strada.
+                    </p>
+                </div>
+    
+                <div class="col d-flex justify-content-center align-items-center">
+                    <div class="card border-0" style="width: 12rem;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Italian_traffic_signs_-_pista_ciclabile_contigua_al_marciapiede.svg/2048px-Italian_traffic_signs_-_pista_ciclabile_contigua_al_marciapiede.svg.png"
+                            class="card-img-top" alt="img">
+                    </div>
+                </div>
+    
+            </div>
+        <footer class="footer">
+            <div class="container">
+                 <span class="text-muted">Sito realizzato da G.Campolongo e C.Bovo &copy; 2024</span>
+                 <br><br><br><br>
+            </div>
+        </footer>
+
+</body>
+
+</html>
+
+<!--x1D60rCFt9VGYJM1GtpDPy42n2GjxlKh-->  <!--Chiave per l'api della mappa-->
+
+<!--COSE DA FARE
+1. METTERE I COLORI DELLE DOMANDE BLU E QUANDO SI FANNO GIUSTI VERDI O ROSSI
+2. RIFARE I QUIZ FORSE FARNE SOLO UNO CON FORSE 16 DOMANDE E TUTTE MIXATE
+3. RIVEDERE LA GRAFICA DELLA PAGINA INDEX
+4. SISTEMARE IL FOOTER ALLA FINE DELLA PAGINA INDEX
+5. AGGIUNGERE UN ALTRO QUIZ CON DELLE DOMANDE DELLA PATENTE PER FARE LA SFIDA AI PROF 
+   (POTREBBE ESSERE UN IDEA SIMPATICA)
+6. AGGIUNGERE IL FATTO CHE SI POSSANO FARE DEI "SALTI" TRA LE VARIE NORME NELLA PAGINA INDEX
+7. FORSE CON LA STESSA API DI tomtom.com POSSO FARE QUNACHE ALTRA COSA FIGA
+-->
+
+
+
