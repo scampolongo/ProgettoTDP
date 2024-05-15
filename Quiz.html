@@ -32,14 +32,14 @@
             width: 100%;
             padding: 10px;
             margin: 10px 0;
-            background-color: #4CAF50;
+            background-color: #106EEA;
             color: white;
             border: none;
             border-radius: 5px;
         }
 
         button:hover {
-            background-color: #45a049;
+            background-color: #106EEA;
         }
 
         #result {
@@ -50,7 +50,7 @@
 </head>
 
 <body>
-    <h1>Quiz sull'Educazione Stradale in Macchina</h1>
+    <h1>Quiz sull'Educazione Stradale in Bus</h1>
     <div id="quiz">
         <p id="question"></p>
         <button id="startButton">Inizia</button>
@@ -64,14 +64,19 @@
 
         const questions = [
             {
-                question: "Qual è il limite di velocità massimo sulle autostrade in Italia?",
-                options: ["80 km/h", "100 km/h", "130 km/h", "140 km/h"],
-                answer: 2
+                question: "Qual è il modo corretto di attraversare una strada in assenza di attraversamenti pedonali?",
+                options: ["Correre velocemente", "Attraversare in diagonale", "Cercare il punto più stretto della strada", "Cercare un punto visibile e attraversare con cautela"],
+                answer: 3
             },
             {
-                question: "Cosa significa il segnale stradale a forma di triangolo con il punto esclamativo?",
-                options: ["Pericolo Generico", "Stop", "Dare la precedenza", "Divieto di transito"],
+                question: "Cosa è opportuno fare se ho un rifiuto in mano?",
+                options: ["Trovare un cestino e buttarlo via", "Buttarlo per terra per sbarazzarsene subito", "Buttarlo in luogo nascosto, come per esempio una siepe", "appoggiarlo da qualche parte per liberarsene veocemente"],
                 answer: 0
+            },
+            {
+                question: "Quando è consentito attraversare una strada?",
+                options: ["Quando mi sento pronto", "Solo quando il semaforo è verde", "Solo quando ci sono segnali di attraversamento pedonale", "Solo dopo aver guardato in entrambe le direzioni e accertato che sia sicuro attraversare"],
+                answer: 3
             },
             {
                 question: "Qual è il limite di alcol nel sangue per guidare un veicolo?",
@@ -79,18 +84,8 @@
                 answer: 0
             },
             {
-                question: "Quale veicolo ha sempre la precedenza sulle autostrade?",
+                question: "Quale veicolo ha sempre la precedenza?",
                 options: ["Camion", "Auto blu", "Autobus", "Veicoli di soccorso in generale"],
-                answer: 3
-            },
-            {
-                question: "Quale è il limite di velocita nelle zone urbane?",
-                options: ["70 km/h", "50 km/h", "Non c'è limite di velocità", "30 km/h"],
-                answer: 1
-            },
-            {
-                question: "Come si da la precedenza agli incroci",
-                options: ["Il primo che arriva ha la precedenza", "A sinistra", "Non c'è una vera regola", "A destra"],
                 answer: 3
             },
             {
@@ -99,21 +94,37 @@
                 answer: 0
             },
             {
-                question: "Quale veicolo ha la precedenza nei pressi di una rotonda?",
-                options: ["Quello più veloce", "Quello più piccolo", "Quello già all'interno della rotonda", "Quello più grande"],
+                question: "Qual è l'abbigliamento consigliato per i ciclisti?",
+                options: ["Casco obbligatorio", "Abbigliamento adatto alla visibilità e casco", "Maglietta e pantaloncini", "Sciarpa e guanti"],
+                answer: 1
+            },
+            {
+                question: "È consigliabile usare il casco in bici?",
+                options: ["Si, solo sulla strada", "Si, ma solo da minorenne", "No", "Si, è sempre consigliabbile usare il casco in bici"],
+                answer: 3
+            },
+            {
+                question: "Quale luce deve avere una bicicletta in circolazione notturna?",
+                options: ["Luce bianca anteriore e luce rossa posteriore", "Solo luce bianca anteriore", "Solo luce rossa posteriore", "Nessuna luce"],
+                answer: 0
+            },  
+            {
+                question: "Cosa dovrebbe fare un passeggero sui mezzi pubblici quando un anziano entra sull'autobus?",
+                options: ["Continuare a sedersi e ignorare la situazione", "Alzarsi e offrire il proprio posto", "Chiedere all'autista di farlo sedere altrove", "Restare seduti e aspettare che qualcun altro si alzi"],
+                answer: 1
+            },
+            {
+                question: "Qual è il comportamento appropriato per un passeggero sui mezzi pubblici in caso di sovraffollamento?",
+                options: ["Spingere per entrare", "Lamentarsi con gli altri passeggeri", "Rimanere tranquillo e rispettare lo spazio degli altri", "Sedersi sui gradini dell'autobus"],
                 answer: 2
             },
             {
-                question: "Quando sta passando un ambulanza?",
-                options: ["Bisogna mettersi in parte e lasciarla passare", "Bisogna accodarsi per risparmiare tempo", "Bisogna acceelerare per togliersi dalla strada", "non bisogna fare niente "],
-                answer: 0
+                question: "Cosa dovrebbe fare un passeggero sui mezzi pubblici se si rende conto di aver perso un oggetto personale?",
+                options: ["Sperare che qualcuno lo restituisca", "Informare immediatamente il conducente o l'ufficio oggetti smarriti", "Lasciar perdere e comprare un nuovo oggetto", "Pubblicare un annuncio sui social media"],
+                answer: 1
             },
-            {
-                question: "Quali veicoli possono circolare sulla corsia di emergenza?",
-                options: ["Solo le auto della polizia", "Solo le ambulanze", "Solo i veicoli con guasto", "Nessuno, tranne per emergenze"],
-                answer: 3
-            }
         ];
+
 
 
         document.getElementById("option1").addEventListener("click", function () {
@@ -167,10 +178,10 @@
             document.getElementById("option3").disabled = false;
             document.getElementById("option4").disabled = false;
 
-            document.getElementById("option1").style.backgroundColor = "#4CAF50";
-            document.getElementById("option2").style.backgroundColor = "#4CAF50";
-            document.getElementById("option3").style.backgroundColor = "#4CAF50";
-            document.getElementById("option4").style.backgroundColor = "#4CAF50";
+            document.getElementById("option1").style.backgroundColor = "#106EEA";
+            document.getElementById("option2").style.backgroundColor = "#106EEA";
+            document.getElementById("option3").style.backgroundColor = "#106EEA";
+            document.getElementById("option4").style.backgroundColor = "#106EEA";
 
             document.getElementById("startButton").style.display = "none";
 
@@ -192,10 +203,10 @@
 
             setTimeout(function() {
                 currentQuestion++;
-                document.getElementById("option1").style.backgroundColor = "#4CAF50";
-                document.getElementById("option2").style.backgroundColor = "#4CAF50";
-                document.getElementById("option3").style.backgroundColor = "#4CAF50";
-                document.getElementById("option4").style.backgroundColor = "#4CAF50";
+                document.getElementById("option1").style.backgroundColor = "#106EEA";
+                document.getElementById("option2").style.backgroundColor = "#106EEA";
+                document.getElementById("option3").style.backgroundColor = "#106EEA";
+                document.getElementById("option4").style.backgroundColor = "#106EEA";
             if (currentQuestion < questions.length) {
                     showQuestion();
                 } else {
@@ -208,9 +219,9 @@
             currentQuestion = -1;
             document.getElementById("quiz").style.display = "none";
             if (score == questions.length) {
-                alert("Hai risposto correttamente a tutte le domande  :)\nClicca per tornare alla home.");
+                alert("Hai risposto correttamente a tutte le domande  \nClicca per tornare alla home.");
             } else if (score == 0) {
-                alert("Hai sbagliato tutte le domande :(\nClicca per tornare alla home.");
+                alert("Hai sbagliato tutte le domande \nClicca per tornare alla home.");
             } else {
                 alert("Hai risposto correttamente a " + score + " su " + questions.length + " domande!\nClicca per tornare alla home.");
             }
